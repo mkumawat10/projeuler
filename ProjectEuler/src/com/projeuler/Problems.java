@@ -32,4 +32,26 @@ public class Problems {
 		}
 		return sum;
 	}
+	
+	// largest prime factor
+	
+	public int largestPrimeFactor(){
+		long number = 600851475143;
+		int primeFactor = 2, largestPrimeFactor = 2;
+		
+		while(number != primeFactor)
+		{
+			if(number % primeFactor == 0)
+			{
+				number = number / primeFactor;
+				if(primeFactor > largestPrimeFactor)
+					largestPrimeFactor = primeFactor;
+					
+				primeFactor = 2;	
+			}
+			else
+				primeFactor++;
+		}
+		return largestPrimeFactor;
+	}
 }

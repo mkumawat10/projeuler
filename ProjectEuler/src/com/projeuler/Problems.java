@@ -34,7 +34,6 @@ public class Problems {
 	}
 	
 	// largest prime factor
-	
 	public int largestPrimeFactor(){
 		long number = 600851475143;
 		int primeFactor = 2, largestPrimeFactor = 2;
